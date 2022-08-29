@@ -1,0 +1,138 @@
+@import "reset.css";
+
+
+/*GLOBAL*/
+
+:root {
+  --red: hsl(0, 100%, 74%) ;
+  --green: hsl(154, 59%, 51%);
+  --blue: hsl(248, 32%, 49%);
+  --darkBlue: hsl(249, 10%, 26%) ;
+  --grayishBlue: hsl(246, 25%, 77%);
+
+}
+
+body {
+  background: var(--red) url(../images/bg-intro-desktop.png);
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+  max-width: 100%;
+  width: 70%;
+  padding-top: 5rem;
+  margin: 0 auto;
+  align-items: center;
+
+
+  color: white;
+}
+
+/*INTRO*/
+
+
+.intro {
+  flex: 1;
+}
+
+.intro h1 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.intro p {
+  padding-top: 30px;
+  line-height: 2;
+  font-weight: 400;
+}
+
+/*CADASTRO*/
+
+
+.cadastro {
+  flex: 1;
+  text-align: center;
+  flex-wrap: wrap;
+
+}
+
+
+
+.offer a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  background: var(--blue);
+  border-radius: .5rem;
+  margin-bottom: 20px;
+  box-shadow: 5px 5px 15px 0 rgba(15, 15, 15, .5);
+  padding: 1.5rem;
+  transition: .2s ease-out;
+}
+
+.offer a:hover {
+  transform: scaleX(1.1) scaleY(1.1);
+}
+
+.cadastro form {
+  background-color: white;
+  padding: 3rem;
+  padding-right: 60px;
+  border-radius: .5rem;
+  box-shadow: 5px 5px 15px 0 rgba(15, 15, 15, .5);
+
+}
+
+form input {
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 20px 0 20px 20px;
+  margin-bottom: 20px;
+  border-radius: .2rem;
+  border: 1px solid rgba(15, 15, 15, .5);
+}
+
+.cadastro form .button button{
+  border-style: none;
+  width: 100%;
+  background: var(--green);
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  padding: 1.1rem;
+  box-shadow: 3px 3px 10px 0 rgba(15, 15, 15, .5);
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: .2s ease-out;
+}
+
+.button button:hover {
+  transform: scaleX(1.1) scaleY(1.1);
+}
+
+.button small {
+  color: var(--grayishBlue);
+  font-size: .8rem;
+
+}
+
+.button {
+  width: 104%;
+}
+
+
+
+
+.terms a {
+  color: var(--red);
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+}
